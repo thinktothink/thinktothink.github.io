@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>写点文字，做点梦</title>
+  <subtitle>Angela叨叨的地方</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2017-01-18T15:53:39.000Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Angela</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello My Blog</title>
+    <link href="http://yoursite.com/2017/01/18/Hello-My-Blog/"/>
+    <id>http://yoursite.com/2017/01/18/Hello-My-Blog/</id>
+    <published>2017-01-18T15:13:43.000Z</published>
+    <updated>2017-01-18T15:53:39.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>作为一个手残党，花了一个下午加一个晚上搭建起来了这个基本的博客，可以上手了开心到飞起哈哈哈○( ＾皿＾)っ，加油码文字ლ(｡◕ˇε ˇ◕。ლ)</strong><br><a id="more"></a><br>虽然说用Markdown格式，不过也有一些hexo特别的tag格式，以及一些命令，和用Hexo写博客用到的Tips，就在这里汇总吧，持续更新。</p>
+<h2 id="Hexo一些操作命令："><a href="#Hexo一些操作命令：" class="headerlink" title="Hexo一些操作命令："></a>Hexo一些操作命令：</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ hexo new [draft] <span class="string">"blog name"</span> // 建立新博客，括号表示可选项，加draft就是建立一个草稿文件</div><div class="line">$ hexo publish <span class="string">"draft blog name"</span> //草稿打好了，正式发布</div><div class="line">$ hexo clean &amp;&amp; hexo s //本地预览，s是server的缩写</div><div class="line">$ hexo clean &amp;&amp; hexo g -<span class="_">-d</span> //发布，d是deploy，g是generate，发布过程中需要输入github的密码</div></pre></td></tr></table></figure>
+<p>大功告成~</p>
+<h2 id="关于博客写作："><a href="#关于博客写作：" class="headerlink" title="关于博客写作："></a>关于博客写作：</h2><p>首先当然可以去翻翻官方文档<a href="https://hexo.io/docs/tag-plugins.html" target="_blank" rel="external">Tag Plugins</a>，这里做个总结吧~~大部分都是关于引用的用法：</p>
+<h3 id="一般引用："><a href="#一般引用：" class="headerlink" title="一般引用："></a>一般引用：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;% blockquote [author[, <span class="built_in">source</span>]] [link] [source_link_title] %&#125;</div><div class="line">content</div><div class="line">&#123;% endblockquote %&#125;</div></pre></td></tr></table></figure>
+<p>例如：</p>
+<blockquote><p>中国人的性情是总喜欢调和折中的，譬如你说，这屋子太暗，须在这里开一个窗，大家一定不允许的。但如果你主张拆掉屋顶他们就来调和，愿意开窗了。</p>
+<footer><strong>鲁迅</strong><cite>无声的中国</cite></footer></blockquote>
+<h3 id="代码引用"><a href="#代码引用" class="headerlink" title="代码引用"></a>代码引用</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;% codeblock [title] [lang:language] [url] [link text] %&#125;</div><div class="line">code snippet</div><div class="line">&#123;% endcodeblock %&#125;</div></pre></td></tr></table></figure>
+<p>例子：</p>
+<figure class="highlight python"><figcaption><span>Numpy.array</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">s = Numpy.array([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>])</div></pre></td></tr></table></figure>
+<h3 id="命令行式"><a href="#命令行式" class="headerlink" title="命令行式"></a>命令行式</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&gt; ``` bash</div><div class="line">&gt;[language] [title] [url] [link text] code snippet </div><div class="line">&gt; ```</div></pre></td></tr></table></figure>
+<h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;% img [class names] /path/to/image [width] [height] [title text [alt text]] %&#125;</div></pre></td></tr></table></figure>
+<h3 id="还有一些是主题里面定义的标签"><a href="#还有一些是主题里面定义的标签" class="headerlink" title="还有一些是主题里面定义的标签"></a>还有一些是主题里面定义的标签</h3><p>比如我这里用的是Next主题，就可以用</p>
+<h4 id="文本居中的引用"><a href="#文本居中的引用" class="headerlink" title="文本居中的引用"></a><a href="http://theme-next.iissnan.com/tag-plugins.html" target="_blank" rel="external">文本居中的引用</a></h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;% cq %&#125; blah blah blah &#123;% endcq %&#125;</div></pre></td></tr></table></figure>
+<p>比如我的“关于”页面</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;作为一个手残党，花了一个下午加一个晚上搭建起来了这个基本的博客，可以上手了开心到飞起哈哈哈○( ＾皿＾)っ，加油码文字ლ(｡◕ˇε ˇ◕。ლ)&lt;/strong&gt;&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+    
+  </entry>
+  
+</feed>
