@@ -84,15 +84,16 @@
 
 
 
+<meta name="description" content="基本搭建起来了这个博客，可以上手了○( ＾皿＾)っ">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello-My-Blog">
+<meta property="og:title" content="Hello My Blog">
 <meta property="og:url" content="http://yoursite.com/2017/01/18/Hello-My-Blog/index.html">
 <meta property="og:site_name" content="写点文字，做点梦">
-<meta property="og:image" content="https://source.unsplash.com/random/1600x900">
-<meta property="og:updated_time" content="2017-01-18T13:31:33.000Z">
+<meta property="og:description" content="基本搭建起来了这个博客，可以上手了○( ＾皿＾)っ">
+<meta property="og:updated_time" content="2017-01-18T15:22:06.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello-My-Blog">
-<meta name="twitter:image" content="https://source.unsplash.com/random/1600x900">
+<meta name="twitter:title" content="Hello My Blog">
+<meta name="twitter:description" content="基本搭建起来了这个博客，可以上手了○( ＾皿＾)っ">
 
 
 
@@ -126,7 +127,7 @@
 
 
 
-  <title> Hello-My-Blog | 写点文字，做点梦 </title>
+  <title> Hello My Blog | 写点文字，做点梦 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -311,7 +312,7 @@
             
             
               
-                Hello-My-Blog
+                Hello My Blog
               
             
           </h1>
@@ -324,7 +325,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-01-18T21:31:33+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-01-18T23:13:43+08:00">
                 2017-01-18
               </time>
             
@@ -354,7 +355,7 @@
 
           
           
-             <span id="/2017/01/18/Hello-My-Blog/" class="leancloud_visitors" data-flag-title="Hello-My-Blog">
+             <span id="/2017/01/18/Hello-My-Blog/" class="leancloud_visitors" data-flag-title="Hello My Blog">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -379,8 +380,20 @@
       
 
       
-        <p><img src="https://source.unsplash.com/random/1600x900"><br><a id="more"></a><br>hello haha!</p>
-
+        <p><strong>基本搭建起来了这个博客，可以上手了○( ＾皿＾)っ</strong><br><a id="more"></a><br>虽然说用Markdown格式，不过也有一些hexo特别的tag格式，以及一些命令，和用Hexo写博客用到的Tips，就在这里汇总吧，持续更新。</p>
+<h2 id="Hexo一些操作命令："><a href="#Hexo一些操作命令：" class="headerlink" title="Hexo一些操作命令："></a>Hexo一些操作命令：</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ hexo new [draft] <span class="string">"blog name"</span> // 建立新博客，括号表示可选项，加draft就是建立一个草稿文件</div><div class="line">$ hexo publish <span class="string">"draft blog name"</span> //草稿打好了，正式发布</div><div class="line">$ hexo clean &amp;&amp; hexo s //本地预览，s是server的缩写</div><div class="line">$ hexo clean &amp;&amp; hexo d --g //发布，d是deploy，g是generate，发布过程中需要输入github的密码</div></pre></td></tr></table></figure>
+<p>大功告成~</p>
+<h2 id="关于博客写作："><a href="#关于博客写作：" class="headerlink" title="关于博客写作："></a>关于博客写作：</h2><p>首先当然可以去翻翻官方文档<a href="https://hexo.io/docs/tag-plugins.html" target="_blank" rel="external">Tag Plugins</a>，这里做个总结吧~~大部分都是关于引用的用法：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment">### 一般引用：</span></div><div class="line">&#123;% blockquote [author[, <span class="built_in">source</span>]] [link] [source_link_title] %&#125;</div><div class="line">content</div><div class="line">&#123;% endblockquote %&#125;</div></pre></td></tr></table></figure>
+<p>例如：</p>
+<blockquote><p>中国人的性情是总喜欢调和折中的，譬如你说，这屋子太暗，须在这里开一个窗，大家一定不允许的。但如果你主张拆掉屋顶他们就来调和，愿意开窗了。</p>
+<footer><strong>鲁迅</strong><cite>无声的中国</cite></footer></blockquote>
+<h3 id="代码引用"><a href="#代码引用" class="headerlink" title="代码引用"></a>代码引用</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;% codeblock [title] [lang:language] [url] [link text] %&#125;</div><div class="line">code snippet</div><div class="line">&#123;% endcodeblock %&#125;</div></pre></td></tr></table></figure>
+<p>例子：</p>
+<figure class="highlight python"><figcaption><span>Numpy.array</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">s = Numpy.array([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>])</div></pre></td></tr></table></figure>
+<h3 id="命令行式"><a href="#命令行式" class="headerlink" title="命令行式"></a>命令行式</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&gt; ``` bash</div><div class="line">&gt;[language] [title] [url] [link text] code snippet </div><div class="line">&gt; ```</div></pre></td></tr></table></figure>
+<h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;% img [class names] /path/to/image [width] [height] [title text [alt text]] %&#125;</div></pre></td></tr></table></figure>
+<h3 id="其他的就不写了，感觉不大能用到"><a href="#其他的就不写了，感觉不大能用到" class="headerlink" title="其他的就不写了，感觉不大能用到"></a>其他的就不写了，感觉不大能用到</h3>
       
     </div>
 
@@ -403,22 +416,6 @@
       
 
       
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2016/12/07/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-          </div>
-        </div>
-      
 
       
       
@@ -430,7 +427,7 @@
     <div class="post-spread">
       
         <div class="ds-share flat" data-thread-key="2017/01/18/Hello-My-Blog/"
-     data-title="Hello-My-Blog"
+     data-title="Hello My Blog"
      data-content=""
      data-url="http://yoursite.com/2017/01/18/Hello-My-Blog/">
   <div class="ds-share-inline">
@@ -460,7 +457,7 @@
   <div class="comments" id="comments">
     
       <div class="ds-thread" data-thread-key="2017/01/18/Hello-My-Blog/"
-           data-title="Hello-My-Blog" data-url="http://yoursite.com/2017/01/18/Hello-My-Blog/">
+           data-title="Hello My Blog" data-url="http://yoursite.com/2017/01/18/Hello-My-Blog/">
       </div>
     
   </div>
@@ -484,8 +481,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.jpeg"
@@ -498,7 +504,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">1</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -527,6 +533,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo一些操作命令："><span class="nav-number">1.</span> <span class="nav-text">Hexo一些操作命令：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关于博客写作："><span class="nav-number">2.</span> <span class="nav-text">关于博客写作：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#代码引用"><span class="nav-number">2.1.</span> <span class="nav-text">代码引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#命令行式"><span class="nav-number">2.2.</span> <span class="nav-text">命令行式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图片"><span class="nav-number">2.3.</span> <span class="nav-text">图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他的就不写了，感觉不大能用到"><span class="nav-number">2.4.</span> <span class="nav-text">其他的就不写了，感觉不大能用到</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
     </div>
