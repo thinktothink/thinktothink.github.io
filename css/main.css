@@ -986,7 +986,7 @@ pre .javascript .function {
 }
 .headband {
   height: 3px;
-  background: #222;
+  background: url("/Users/Angel/thinktothink.github.io/themes/next/source/images/background.jpg");
 }
 .site-meta {
   margin: 0;
@@ -1686,7 +1686,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #5ce0d1;
+  background: #d6aba8;
 }
 .links-of-blogroll {
   font-size: 13px;
