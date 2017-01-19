@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>写点文字，做点梦</title>
+  <title>写点文字做点梦</title>
   <subtitle>Angela叨叨的地方</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-01-18T15:53:39.000Z</updated>
+  <updated>2017-01-19T06:37:41.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,12 +20,12 @@
     <link href="http://yoursite.com/2017/01/18/Hello-My-Blog/"/>
     <id>http://yoursite.com/2017/01/18/Hello-My-Blog/</id>
     <published>2017-01-18T15:13:43.000Z</published>
-    <updated>2017-01-18T15:53:39.000Z</updated>
+    <updated>2017-01-19T06:37:41.000Z</updated>
     
     <content type="html"><![CDATA[<p><strong>作为一个手残党，花了一个下午加一个晚上搭建起来了这个基本的博客，可以上手了开心到飞起哈哈哈○( ＾皿＾)っ，加油码文字ლ(｡◕ˇε ˇ◕。ლ)</strong><br><a id="more"></a><br>虽然说用Markdown格式，不过也有一些hexo特别的tag格式，以及一些命令，和用Hexo写博客用到的Tips，就在这里汇总吧，持续更新。</p>
-<h2 id="Hexo一些操作命令："><a href="#Hexo一些操作命令：" class="headerlink" title="Hexo一些操作命令："></a>Hexo一些操作命令：</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ hexo new [draft] <span class="string">"blog name"</span> // 建立新博客，括号表示可选项，加draft就是建立一个草稿文件</div><div class="line">$ hexo publish <span class="string">"draft blog name"</span> //草稿打好了，正式发布</div><div class="line">$ hexo clean &amp;&amp; hexo s //本地预览，s是server的缩写</div><div class="line">$ hexo clean &amp;&amp; hexo g -<span class="_">-d</span> //发布，d是deploy，g是generate，发布过程中需要输入github的密码</div></pre></td></tr></table></figure>
+<h2 id="Hexo一些操作命令"><a href="#Hexo一些操作命令" class="headerlink" title="Hexo一些操作命令"></a>Hexo一些操作命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ hexo new [draft] <span class="string">"blog name"</span> // 建立新博客，括号表示可选项，加draft就是建立一个草稿文件</div><div class="line">$ hexo publish <span class="string">"draft blog name"</span> //草稿打好了，正式发布</div><div class="line">$ hexo clean &amp;&amp; hexo s //本地预览，s是server的缩写</div><div class="line">$ hexo clean &amp;&amp; hexo g -<span class="_">-d</span> //发布，d是deploy，g是generate，发布过程中需要输入github的密码</div></pre></td></tr></table></figure>
 <p>大功告成~</p>
-<h2 id="关于博客写作："><a href="#关于博客写作：" class="headerlink" title="关于博客写作："></a>关于博客写作：</h2><p>首先当然可以去翻翻官方文档<a href="https://hexo.io/docs/tag-plugins.html" target="_blank" rel="external">Tag Plugins</a>，这里做个总结吧~~大部分都是关于引用的用法：</p>
+<h2 id="关于博客写作"><a href="#关于博客写作" class="headerlink" title="关于博客写作"></a>关于博客写作</h2><p>具体到写作，可以用Markdown的语法，如果想改变字体的大小颜色可以参考html的标签写法。Hexo自带的一些用法可以去翻翻官方文档<a href="https://hexo.io/docs/tag-plugins.html" target="_blank" rel="external">Tag Plugins</a>，大部分都是关于引用的用法：</p>
 <h3 id="一般引用："><a href="#一般引用：" class="headerlink" title="一般引用："></a>一般引用：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;% blockquote [author[, <span class="built_in">source</span>]] [link] [source_link_title] %&#125;</div><div class="line">content</div><div class="line">&#123;% endblockquote %&#125;</div></pre></td></tr></table></figure>
 <p>例如：</p>
 <blockquote><p>中国人的性情是总喜欢调和折中的，譬如你说，这屋子太暗，须在这里开一个窗，大家一定不允许的。但如果你主张拆掉屋顶他们就来调和，愿意开窗了。</p>
@@ -35,9 +35,9 @@
 <figure class="highlight python"><figcaption><span>Numpy.array</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">s = Numpy.array([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>])</div></pre></td></tr></table></figure>
 <h3 id="命令行式"><a href="#命令行式" class="headerlink" title="命令行式"></a>命令行式</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&gt; ``` bash</div><div class="line">&gt;[language] [title] [url] [link text] code snippet </div><div class="line">&gt; ```</div></pre></td></tr></table></figure>
 <h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;% img [class names] /path/to/image [width] [height] [title text [alt text]] %&#125;</div></pre></td></tr></table></figure>
-<h3 id="还有一些是主题里面定义的标签"><a href="#还有一些是主题里面定义的标签" class="headerlink" title="还有一些是主题里面定义的标签"></a>还有一些是主题里面定义的标签</h3><p>比如我这里用的是Next主题，就可以用</p>
-<h4 id="文本居中的引用"><a href="#文本居中的引用" class="headerlink" title="文本居中的引用"></a><a href="http://theme-next.iissnan.com/tag-plugins.html" target="_blank" rel="external">文本居中的引用</a></h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;% cq %&#125; blah blah blah &#123;% endcq %&#125;</div></pre></td></tr></table></figure>
-<p>比如我的“关于”页面</p>
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p>这里就不列举了，去官网翻翻吧</p>
+<h3 id="主题自带的格式"><a href="#主题自带的格式" class="headerlink" title="主题自带的格式"></a>主题自带的格式</h3><p>比如如果用的是Next主题，就可以参见<a href="http://theme-next.iissnan.com/tag-plugins.html" target="_blank" rel="external">文本居中的引用</a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;% cq %&#125; blah blah blah &#123;% endcq %&#125;</div></pre></td></tr></table></figure></p>
+<h2 id="Hexo主题"><a href="#Hexo主题" class="headerlink" title="Hexo主题"></a>Hexo主题</h2><p>一开始用了Next主题，的确是简约大方，性冷淡风。想花一些，可以看看其他的，现在用的是huno主题。爱折腾的可以去先找个主题，然后修改配置文件，修改背景图片，字体等等，参见所使用的主题的文档。</p>
 ]]></content>
     
     <summary type="html">
